@@ -154,12 +154,16 @@ WHITELIST_IPS = {
      
 }
 
-WHITELIST_PATTERNS = [r]
+WHITELIST_PATTERNS = [
+    # Add whitelist patterns here
+    # Example: r'/favicon\.ico',
+    # Example: r'/robots\.txt',
+]
 
 WHITELIST_API_PATTERNS = [
-    r'',
-    r'',
-    
+    # Add whitelist API patterns here
+    # Example: r'/api/health',
+    # Example: r'/api/status',
 ]
 
 # Protection thresholds
@@ -1137,4 +1141,5 @@ def main():
         print("\n👋 Stopping protection system.")
 
 if __name__ == "__main__":
+
     main()
